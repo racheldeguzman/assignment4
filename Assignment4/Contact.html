@@ -9,22 +9,24 @@
             width:200px;
             border-radius: 10px;
         }
+        #checkbox{
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            margin:0px;
+        }
         select{
             width:400px;
             border-radius: 10px;
         }
-        .radiobutton{
+        #radiobutton{
             display:flex;
-            flex-direction:row;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
         }
-        .radioyes{
-            display:flex;
-            flex:0.1;
-        }
-        .radiono{
-            display:flex;
-            flex:0.1;
-        }
+
         .submit{
              justify-content:center;
             flex-direction: row;
@@ -41,7 +43,6 @@
     
         @media screen and (max-width:40rem){
             form div, h2{ display:flex;flex-direction: column;align-items:center;}
-            .radiobutton{display:flex; flex-direction: column;}
         }
         
     </style>
@@ -98,21 +99,19 @@
                 <textarea name="comments" id="comments" rows="4" cols="40"></textarea>
             </div>
  
-            <div class="radiobutton">
+            <div id="radiobutton">
                 <label>Did you like your website experience?</label>
-                <input class="radioyes" type="radio" name="join" value="Yes" checked>Yes
+                <input type="radio" name="join" value="Yes" checked>Yes
                 <br>
-                <input class="radiono" type="radio" name="join" value="No">No
+                <input type="radio" name="join" value="No">No
             </div>
 
-            <div>
+            <div id="checkbox">
                 <label>Favorite Bubble Tea(s)? (Select All that Apply)</label>
-                    <div style="display:flex; flex-direction: row;">
-                        <input style="flex:0.1;" type="checkbox" name="choice1" value="milk"> Milk Tea
-                        <br>
-                        <input style="flex:0.1;" type="checkbox" name="choice2"   value="Thai"> Thai Tea
-                        <br>
-                        <input style="flex:0.1;" type="checkbox" name="choice3" value="Fruit"> Fruit Tea  
+                    <div id="checkbox">
+                        <input type="checkbox" name="choice1" value="milk"> Milk Tea
+                        <input type="checkbox" name="choice2"   value="Thai"> Thai Tea
+                        <input type="checkbox" name="choice3" value="Fruit"> Fruit Tea  
                     </div>
             </div>
             
