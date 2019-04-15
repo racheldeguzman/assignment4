@@ -40,7 +40,8 @@
         }
     
         @media screen and (max-width:40rem){
-            form{ flex-direction: column;}
+            form div, h2{ display:flex;flex-direction: column;align-items:center;}
+            .radiobutton{display:flex; flex-direction: column;}
         }
         
     </style>
@@ -99,17 +100,20 @@
  
             <div class="radiobutton">
                 <label>Did you like your website experience?</label>
-        
                 <input class="radioyes" type="radio" name="join" value="Yes" checked>Yes
-
+                <br>
                 <input class="radiono" type="radio" name="join" value="No">No
             </div>
 
             <div>
                 <label>Favorite Bubble Tea(s)? (Select All that Apply)</label>
-                <input type="checkbox" name="choice1" value="milk"> Milk Tea
-                <input type="checkbox" name="choice2" value="Thai"> Thai Tea
-                <input type="checkbox" name="choice3" value="Fruit"> Fruit Tea
+                    <div style="display:flex; flex-direction: row;">
+                        <input style="flex:0.1;" type="checkbox" name="choice1" value="milk"> Milk Tea
+                        <br>
+                        <input style="flex:0.1;" type="checkbox" name="choice2"   value="Thai"> Thai Tea
+                        <br>
+                        <input style="flex:0.1;" type="checkbox" name="choice3" value="Fruit"> Fruit Tea  
+                    </div>
             </div>
             
             <div class="submit">

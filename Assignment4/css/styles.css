@@ -30,7 +30,7 @@ header{
 @media screen and (max-width:40rem){
     header{flex-direction:column;}
     body {flex-direction:column;}
-    form{ flex-direction: column;}
+    form { flex-direction: column;}
 }
 h1 { 
     Display:flex;
