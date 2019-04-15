@@ -9,24 +9,10 @@
             width:200px;
             border-radius: 10px;
         }
-        #checkbox{
-            display:flex;
-            flex-direction:column;
-            justify-content: center;
-            align-items: center;
-            margin:0px;
-        }
         select{
             width:400px;
             border-radius: 10px;
         }
-        #radiobutton{
-            display:flex;
-            flex-direction:column;
-            justify-content: center;
-            align-items: center;
-        }
-
         .submit{
              justify-content:center;
             flex-direction: row;
@@ -99,18 +85,20 @@
                 <textarea name="comments" id="comments" rows="4" cols="40"></textarea>
             </div>
  
-            <div id="radiobutton">
+            <div>
                 <label>Did you like your website experience?</label>
-                <input type="radio" name="join" value="Yes" checked>Yes
-                <br>
-                <input type="radio" name="join" value="No">No
+                    <div style="display:flex; flex-direction: row; width:100px;margin:0px;">
+                        <input type="radio" name="join" value="Yes" checked>Yes
+                        <input type="radio" name="join" value="No">No
+                    </div>
             </div>
 
-            <div id="checkbox">
+            <div>
                 <label>Favorite Bubble Tea(s)? (Select All that Apply)</label>
-                    <div id="checkbox">
+                    <div style="display:flex; flex-direction: row; width:200px;margin:0px;">
                         <input type="checkbox" name="choice1" value="milk"> Milk Tea
                         <input type="checkbox" name="choice2"   value="Thai"> Thai Tea
+                        <br>
                         <input type="checkbox" name="choice3" value="Fruit"> Fruit Tea  
                     </div>
             </div>
